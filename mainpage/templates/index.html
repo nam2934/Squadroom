@@ -32,7 +32,7 @@
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                 {% if user.is_authenticated %}
-                    <h4 class="text-uppercase mb-4"><a class="white_color" href="{% url 'index' %}">[ 공지사항 ]</a></h4>
+                    <h4 class="text-uppercase mb-4"><a class="white_color" href="{% url 'notice' %}">[ 공지사항 ]</a></h4>
                 {% else %}
                     <h4 class="text-uppercase mb-4"><a class="white_color" href="{% url 'login' %}">[ 공지사항 ]</a></h4>
                 {% endif %}

@@ -1,3 +1,8 @@
 from django.contrib import admin
+from mainpage.models import Notice
 
-# Register your models here.
+admin.site.register(Notice)
+
+# @admin.register(Notice)
+# class NoticeAdmin(admin.ModelAdmin):
+#     list_display = ('title', 'writer', 'content', 'pub_date')
