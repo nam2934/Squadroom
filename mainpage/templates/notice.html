@@ -13,8 +13,8 @@
         </thead>                
         <tbody>
         {% if notice_list %}
-        {% for notice in notice_list %}
-                <tr>
+            {% for notice in notice_list %}
+                <tr onClick="location.href='{{ notice.get_absolute_url }}'">
                     <td>{{ notice.id }}</td><td>{{ notice.title }}</td><td>{{ notice.writer }}</td><td>{{ notice.pub_date }}</td>
                 </tr>
             {% endfor %}

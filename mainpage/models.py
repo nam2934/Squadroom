@@ -1,4 +1,5 @@
 from django.conf import settings
+from django.urls import reverse
 from django.db import models
 
 class Notice(models.Model):
@@ -12,5 +13,6 @@ class Notice(models.Model):
 
     class Meta:
         ordering = ['id']
-    #def get_absolute_url(self): #8
-    #    return reverse("book-detail", args=[str(self.id)]
+
+    def get_absolute_url(self):
+        return reverse("notice-detail", args=[str(self.id)])

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container my-3 masthead">
+        <h1>공지사항</h1>
+        <br><br>
+        <div>
+            <p class = "text-center">{{ notice.title }}</p>
+            <p class = "text-right">작성자 : {{ notice.writer }}</p>
+        </div class ="notice-content">
+            <p>{{ notice.content }} 
+        </div>
+    </div>
+{% endblock content %}

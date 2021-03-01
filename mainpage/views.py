@@ -11,3 +11,8 @@ def notice(request):
 class NoticeListView(generic.ListView):
     model = Notice
     template_name = "notice.html"
+
+class NoticeDetailView(generic.DetailView):
+    model = Notice
+    template_name = "notice_detail.html"
+
